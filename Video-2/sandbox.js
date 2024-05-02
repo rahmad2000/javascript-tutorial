@@ -164,8 +164,48 @@
 // console.log(customers);
 // console.log(result);
 
-let age;
-console.log(age);
 
-age = null;
-console.log(age, "null + 4 =", age + 4);
+
+
+
+// let age;
+// console.log(age);
+
+// age = null;
+// console.log(age, "null + 4 =", age + 4);
+
+
+// // booleans & comparisons
+// console.log(true, false, "true", "false");
+
+// // // methods can return booleans
+// let email = "john@nasa.com";
+// let names = ['John', 'Adam', 'Sam'];
+
+// let result = email.includes('@');
+// let result2 = names.includes('Adam');
+
+// console.log(result);
+// console.log(result2);
+
+// comparison operators
+let age = 25;
+
+console.log(age == 25);
+console.log(age == 30);
+
+console.log(age != 30);
+console.log(age > 20);
+console.log(age < 20);
+console.log(age <= 25);
+console.log(age >= 25);
+
+let userName = 'john';
+console.log(userName == 'John');
+console.log(userName == 'john');
+console.log(userName > 'tyrion');
+console.log(userName > 'Tohn');
+console.log(userName > 'John')
+
+
+// loose comparison (different types can still be equal)
