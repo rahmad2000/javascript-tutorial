@@ -1,24 +1,68 @@
 // alert('Hello World!');
 
-// Console Logs to logs things into Console
+// // Console Logs to logs things into Console
 
-console.log(1);
-console.log(2);
+// console.log(1);
+// console.log(2);
 
-// Variables
+// // Variables
 
-let age = 25;
-let year = 2019;
+// let age = 25;
+// let year = 2019;
 
-console.log(age, year);
+// console.log(age, year);
 
-age = 30;
-console.log(age);
+// age = 30;
+// console.log(age);
 
-const points = 100;
-console.log(points);
+// const points = 100;
+// console.log(points);
 
-// points = 50
+// // points = 50
 
-var score = 75;
-console.log(score);
+// var score = 75;
+// console.log(score);
+
+
+
+
+// strings
+
+console.log('hello, world');
+
+let email = 'space@nasa.com';
+console.log(email);
+
+//  string concatenation
+
+let firstName = 'Space';
+let lastName = 'Nasa';
+
+let fullName = firstName + ' ' + lastName;
+console.log(fullName);
+
+// getting characters
+
+console.log(firstName[0]);
+
+//string length
+
+console.log(fullName.length);
+
+//methods
+
+console.log(fullName.toUpperCase());
+let result = fullName.toLowerCase();
+console.log(result,'and', fullName);
+
+let index = email.indexOf('@');
+console.log(index);
+
+// string interpolation
+
+// string escaping
+
+// multiline strings
+
+// string methods
+
