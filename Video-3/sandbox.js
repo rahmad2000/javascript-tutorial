@@ -13,12 +13,23 @@
 // }
 
 
-//while loop
+// //while loop
 
-const names = ['John','Adam','Sam'];
-let i = 0;
+// const names = ['John','Adam','Sam'];
+// let i = 0;
 
-while (i < names.length) {
-  console.log(names[i])  
-  i++;
-};
+// while (i < names.length) {
+//   console.log(names[i])  
+//   i++;
+// };
+
+
+
+//do while
+
+let i = 2;
+do {
+    console.log('val of i is:', i);
+    i++;
+} while (i < 5);
+
