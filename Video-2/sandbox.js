@@ -26,43 +26,45 @@
 
 
 
-// strings
+// // strings
 
-console.log('hello, world');
+// console.log('hello, world');
 
-let email = 'space@nasa.com';
-console.log(email);
+// let email = 'space@nasa.com';
+// console.log(email);
 
-//  string concatenation
+// //  string concatenation
 
-let firstName = 'Space';
-let lastName = 'Nasa';
+// let firstName = 'Space';
+// let lastName = 'Nasa';
 
-let fullName = firstName + ' ' + lastName;
-console.log(fullName);
+// let fullName = firstName + ' ' + lastName;
+// console.log(fullName);
 
-// getting characters
+// // getting characters
 
-console.log(firstName[0]);
+// console.log(firstName[0]);
 
-//string length
+// //string length
 
-console.log(fullName.length);
+// console.log(fullName.length);
 
-//methods
+// //methods
 
-console.log(fullName.toUpperCase());
-let result = fullName.toLowerCase();
-console.log(result,'and', fullName);
+// console.log(fullName.toUpperCase());
+// let result = fullName.toLowerCase();
+// console.log(result,'and', fullName);
 
-let index = email.indexOf('@');
-console.log(index);
+// let index = email.indexOf('@');
+// console.log(index);
 
-// string interpolation
 
-// string escaping
+// //more string methods
 
-// multiline strings
+// let email = 'space@nasa.com';
 
-// string methods
-
+// // let result = email.lastIndexOf('a');
+// //let result = email.slice(2,5);
+// // let result  = email.substring(4,10);
+// // let result = email.replace('a','A');
+// console.log(result);
