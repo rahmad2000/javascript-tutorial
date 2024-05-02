@@ -9,6 +9,24 @@ Learn JavaScript with me by following this helpful YouTube playlist:
 
 ## What I've Learned So Far
 
+
+## Table of Contents
+
+1. [Console Log and Alerts](#console-log-and-alerts)
+2. [Variables](#variables)
+3. [Strings and Methods](#strings-and-methods)
+4. [Math Operations](#math-operations)
+5. [Template Strings](#template-strings)
+6. [Arrays and Methods](#arrays-and-methods)
+7. [Null, Undefined, and Booleans](#null-undefined-and-booleans)
+8. [Comparison and Type Conversion](#comparison-and-type-conversion)
+9. [For Loops](#for-loops)
+10. [While Loops](#while-loops)
+11. [Conditional Statements](#conditional-statements)
+12. [Logical Operators](#logical-operators)
+13. [Switch Statements](#switch-statements)
+14. [Variable and Block Scope](#variable-and-block-scope)
+
 ### Syntax Basics
 
 #### Console Log and Alerts
@@ -85,4 +103,100 @@ score = Number(score);
 console.log(score + 1);
 console.log(typeof score);
 ```
+
+
+### Syntax Basics
+
+#### For Loops
+```javascript
+// Simple for loop from 0 to 4
+for (let i = 0; i < 5; i++) {
+    console.log('in loop:', i);
+}
+console.log('loop finished');
+
+// Iterating over an array
+const names = ['John', 'Adam', 'Sam'];
+for (let i = 0; i < names.length; i++) {
+    let html = `<div>${names[i]}</div>`;
+    console.log(html);
+}
+```
+
+#### While Loops
+```javascript
+const names = ['John', 'Adam', 'Sam'];
+let i = 0;
+while (i < names.length) {
+    console.log(names[i]);
+    i++;
+}
+```
+
+#### Conditional Statements
+```javascript
+// Using if, else if, and else
+const age = 25;
+if (age > 20) {
+    console.log('you are over 20 years old');
+}
+
+const password = 'pass';
+if (password.length >= 8) {
+    console.log('that password is long enough');
+} else {
+    console.log('password is not long enough');
+}
+```
+
+#### Logical Operators
+```javascript
+const password = 'p@sswo';
+if (password.length >= 12 && password.includes('@')){
+    console.log('that password is mighty strong');
+} else if (password.length >= 8 || password.includes('@') && password.length >=5) {
+    console.log('that password is strong enough');
+} else {
+    console.log('password is not long enough');
+}
+```
+
+#### Switch Statements
+```javascript
+const grade = 'D';
+switch (grade) {
+    case 'A':
+        console.log('you got an A!');
+        break;
+    case 'B':
+        console.log('you got a B!');
+        break;
+    case 'C':
+        console.log('you got a C!');
+        break;
+    case 'D':
+        console.log('you got a D!');
+        break;
+    default:
+        console.log('Not a Valid Grade');
+        break;
+}
+```
+
+#### Variable and Block Scope
+```javascript
+const age = 30;
+if (true) {
+    const age = 40;
+    const name = 'John';
+    console.log('inside 1st code block:', age, name);
+    if (true) {
+        const age = 50;
+        console.log('inside 2nd code block:', age, name);
+        var test = 'hello';
+    }
+}
+console.log('outside code block:', age, name, test); // Note: `name` is not accessible here due to block scoping
+```
+
 Feel free to follow along, review the code, and explore the concepts discussed. Happy coding!
