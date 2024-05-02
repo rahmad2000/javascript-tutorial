@@ -34,22 +34,32 @@
 // } while (i < 5);
 
 
-//if statements
-const age = 25;
+// //if statements
+// const age = 25;
 
-if (age > 20) {
-    console.log('you are over 20 years old');
-}
+// if (age > 20) {
+//     console.log('you are over 20 years old');
+// }
 
-const customers = ['John','Adam','Sam'];
+// const customers = ['John','Adam','Sam'];
 
-if (customers.length > 3) {
-    console.log("that's a lot of customers");
-}
+// if (customers.length > 3) {
+//     console.log("that's a lot of customers");
+// }
 
-const password = 'pass';
+// const password = 'pass';
 
-if (password.length >= 8) {
+// if (password.length >= 8) {
+//     console.log('that password is long enough');
+// }
+
+
+//else if statements
+const password = 'p@ss';
+if (password.length >= 12) {
+    console.log('that password is mighty strong');
+} else if (password.length >= 8) {
     console.log('that password is long enough');
+} else {
+    console.log('password is not long enough');
 }
-
