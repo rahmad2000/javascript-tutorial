@@ -69,42 +69,78 @@
 
 // //logical operators - OR || and AND &&
 
-const password = 'p@sswo';
+// const password = 'p@sswo';
 
-if (password.length >= 12 && password.includes('@')){
-    console.log('that password is mighty strong');
-} else if (password.length >= 8 || password.includes('@') && password.length >=5) {
-    console.log('that password is strong enough');
-} else {
-    console.log('password is not long enough');
-}
+// if (password.length >= 12 && password.includes('@')){
+//     console.log('that password is mighty strong');
+// } else if (password.length >= 8 || password.includes('@') && password.length >=5) {
+//     console.log('that password is strong enough');
+// } else {
+//     console.log('password is not long enough');
+// }
 
 
-//logical NOT (!)
+// //logical NOT (!)
 
-let user = false;
+// let user = false;
 
-if (user) {
-    console.log('you must be logged in to continue');
-}
+// if (user) {
+//     console.log('you must be logged in to continue');
+// }
 
-console.log(!true);
-console.log(!false);
+// console.log(!true);
+// console.log(!false);
 
-// break and continue
+// // break and continue
 
-const scores = [50, 25, 0, 30, 100, 20, 10];
+// const scores = [50, 25, 0, 30, 100, 20, 10];
 
-for (let i = 0; i < scores.length; i++) {
+// for (let i = 0; i < scores.length; i++) {
 
-    if (scores[i] === 0) {
-        continue;
-    }
+//     if (scores[i] === 0) {
+//         continue;
+//     }
 
-    console.log('your score: ', scores[i]);
+//     console.log('your score: ', scores[i]);
 
-    if (scores[i] === 100) {
-        console.log('congrats, you got the top score!');
+//     if (scores[i] === 100) {
+//         console.log('congrats, you got the top score!');
+//         break;
+//     }
+// }
+
+
+
+
+
+
+
+// //switch statements
+
+const grade = 'D';
+
+switch (grade) {
+    case 'A':
+        console.log('you got an A!')
         break;
-    }
+
+    case 'B':
+        console.log('you got an B!')
+        break;
+
+    case 'C':
+        console.log('you got an C!')
+        break;
+
+    case 'D':
+        console.log('you got an D!')
+        break;
+
+    case 'E':
+        console.log('you got an E!')
+        break;
+
+    default:
+        console.log('Not a Valid Grade')
+        break;
 }
