@@ -111,28 +111,55 @@
 
 
 
-// template strings
+// // template strings
 
-const title = 'Best reads of 2024';
-const author = 'James';
-const likes = 21;
+// const title = 'Best reads of 2024';
+// const author = 'James';
+// const likes = 21;
 
-// concatenation way
+// // concatenation way
 
-//let result = 'The Blog called'  + title + ' by ' + author + ' has ' + likes + ' likes';
+// //let result = 'The Blog called'  + title + ' by ' + author + ' has ' + likes + ' likes';
 
 
-// template string way
+// // template string way
 
-let result = `The Blog called ${title} by ${author} has ${likes}  likes.`;
+// let result = `The Blog called ${title} by ${author} has ${likes}  likes.`;
 
+// console.log(result);
+
+// // creating html templates
+// let html = `
+//     <h2>${title}</h2>
+//     <p>By ${author}</p>
+//     <span>This blog has ${likes} likes</span>
+// `;
+
+// console.log(html);
+
+
+// Arrays
+let customers = ['John', 'Andy', 'Adam'];
+
+customers[1] = 'Sam';
+
+console.log(customers);
+
+let ages = [20, 25, 30, 35];
+
+console.log(ages[2]);
+
+let random = ['A','Z', 3, 31];
+
+console.log(random);
+
+
+// let result = customers.join('|');
+// let result = customers.indexOf('Adam');
+// let result = customers.concat('Tyrion', 'Aragon');
+let result  = customers.push('Tyrion');
+result = customers.pop();
 console.log(result);
 
-// creating html templates
-let html = `
-    <h2>${title}</h2>
-    <p>By ${author}</p>
-    <span>This blog has ${likes} likes</span>
-`;
-
-console.log(html);
+console.log(customers);
+console.log(result);
