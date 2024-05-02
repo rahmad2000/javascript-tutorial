@@ -25,11 +25,31 @@
 
 
 
-//do while
+// //do while
 
-let i = 2;
-do {
-    console.log('val of i is:', i);
-    i++;
-} while (i < 5);
+// let i = 2;
+// do {
+//     console.log('val of i is:', i);
+//     i++;
+// } while (i < 5);
+
+
+//if statements
+const age = 25;
+
+if (age > 20) {
+    console.log('you are over 20 years old');
+}
+
+const customers = ['John','Adam','Sam'];
+
+if (customers.length > 3) {
+    console.log("that's a lot of customers");
+}
+
+const password = 'pass';
+
+if (password.length >= 8) {
+    console.log('that password is long enough');
+}
 
