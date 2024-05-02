@@ -21,3 +21,7 @@
 10. Boolean
 
 11. Comparison Operators
+
+12. Loose and Strict Comparison
+
+13. Type Conversion  
