@@ -188,24 +188,39 @@
 // console.log(result);
 // console.log(result2);
 
-// comparison operators
+// // comparison operators
+// let age = 25;
+
+// console.log(age == 25);
+// console.log(age == 30);
+
+// console.log(age != 30);
+// console.log(age > 20);
+// console.log(age < 20);
+// console.log(age <= 25);
+// console.log(age >= 25);
+
+// let userName = 'john';
+// console.log(userName == 'John');
+// console.log(userName == 'john');
+// console.log(userName > 'tyrion');
+// console.log(userName > 'Tohn');
+// console.log(userName > 'John')
+
 let age = 25;
+// loose comparison (different types can still be equal)
 
 console.log(age == 25);
-console.log(age == 30);
+console.log(age == '25');
 
-console.log(age != 30);
-console.log(age > 20);
-console.log(age < 20);
-console.log(age <= 25);
-console.log(age >= 25);
+console.log(age != 25);
+console.log(age != '25');
 
-let userName = 'john';
-console.log(userName == 'John');
-console.log(userName == 'john');
-console.log(userName > 'tyrion');
-console.log(userName > 'Tohn');
-console.log(userName > 'John')
+// strict comparison (different types cannot be equal)
 
+console.log(age === 25);
+console.log(age === '25');
 
-// loose comparison (different types can still be equal)
+console.log(age !== 25);
+console.log(age !== '25');
+

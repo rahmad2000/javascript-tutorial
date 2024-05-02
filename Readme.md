@@ -20,3 +20,4 @@
 
 10. Boolean
 
+11. Comparison Operators
