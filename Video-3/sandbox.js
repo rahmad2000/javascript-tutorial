@@ -117,30 +117,50 @@
 
 // //switch statements
 
-const grade = 'D';
+// const grade = 'D';
 
-switch (grade) {
-    case 'A':
-        console.log('you got an A!')
-        break;
+// switch (grade) {
+//     case 'A':
+//         console.log('you got an A!')
+//         break;
 
-    case 'B':
-        console.log('you got an B!')
-        break;
+//     case 'B':
+//         console.log('you got an B!')
+//         break;
 
-    case 'C':
-        console.log('you got an C!')
-        break;
+//     case 'C':
+//         console.log('you got an C!')
+//         break;
 
-    case 'D':
-        console.log('you got an D!')
-        break;
+//     case 'D':
+//         console.log('you got an D!')
+//         break;
 
-    case 'E':
-        console.log('you got an E!')
-        break;
+//     case 'E':
+//         console.log('you got an E!')
+//         break;
 
-    default:
-        console.log('Not a Valid Grade')
-        break;
+//     default:
+//         console.log('Not a Valid Grade')
+//         break;
+// }
+
+
+
+
+// // variables & block scope
+const age = 30;
+
+if (true) {
+    const age = 40;
+    const name = 'John';
+    console.log('inside 1st code block: ', age, name);
+
+    if (true) {
+        const age = 50;
+        console.log('inside 2nd code block: ', age, name);
+        var test = 'hello';
+    }
 }
+
+console.log('outside code block: ', age, name, test);
