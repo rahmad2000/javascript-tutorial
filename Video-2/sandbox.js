@@ -70,41 +70,69 @@
 // console.log(result);
 
 
-// Math Operations +, -, *, /, **, %
+// // Math Operations +, -, *, /, **, %
 
-let radius = 10;
-const pi = 3.14;
+// let radius = 10;
+// const pi = 3.14;
 
-console.log(radius, pi);
+// console.log(radius, pi);
 
-let result = radius % 3;
-let result2 = pi * radius**2;
+// let result = radius % 3;
+// let result2 = pi * radius**2;
+
+// console.log(result);
+// console.log(result2);
+
+// // order of operation - B E D M A S
+
+// let result3 = 5 * (10-3)**2;
+
+// let likes = 10;
+// likes++;
+// likes--;
+
+// likes +=10;
+// likes -=5;
+// likes *=4;
+// likes /=2;
+
+// console.log(likes)
+
+// // NaN - not a number
+
+// console.log(5 /'hi');
+
+// // concatenation
+
+// let result4 = 'the dish has ' + likes + ' likes';
+
+// console.log(result4);
+
+
+
+
+// template strings
+
+const title = 'Best reads of 2024';
+const author = 'James';
+const likes = 21;
+
+// concatenation way
+
+//let result = 'The Blog called'  + title + ' by ' + author + ' has ' + likes + ' likes';
+
+
+// template string way
+
+let result = `The Blog called ${title} by ${author} has ${likes}  likes.`;
 
 console.log(result);
-console.log(result2);
 
-// order of operation - B E D M A S
+// creating html templates
+let html = `
+    <h2>${title}</h2>
+    <p>By ${author}</p>
+    <span>This blog has ${likes} likes</span>
+`;
 
-let result3 = 5 * (10-3)**2;
-
-let likes = 10;
-likes++;
-likes--;
-
-likes +=10;
-likes -=5;
-likes *=4;
-likes /=2;
-
-console.log(likes)
-
-// NaN - not a number
-
-console.log(5 /'hi');
-
-// concatination
-
-let result4 = 'the dish has ' + likes + ' likes';
-
-console.log(result4);
-
+console.log(html);
