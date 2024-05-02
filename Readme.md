@@ -13,3 +13,10 @@
 5. Operations
 
 6. Template Strings
+
+7. Arrays
+
+8. Null and Undefined
+
+10. Boolean
+

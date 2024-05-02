@@ -138,28 +138,34 @@
 // console.log(html);
 
 
-// Arrays
-let customers = ['John', 'Andy', 'Adam'];
+// // Arrays
+// let customers = ['John', 'Andy', 'Adam'];
 
-customers[1] = 'Sam';
+// customers[1] = 'Sam';
 
-console.log(customers);
+// console.log(customers);
 
-let ages = [20, 25, 30, 35];
+// let ages = [20, 25, 30, 35];
 
-console.log(ages[2]);
+// console.log(ages[2]);
 
-let random = ['A','Z', 3, 31];
+// let random = ['A','Z', 3, 31];
 
-console.log(random);
+// console.log(random);
 
 
-// let result = customers.join('|');
-// let result = customers.indexOf('Adam');
-// let result = customers.concat('Tyrion', 'Aragon');
-let result  = customers.push('Tyrion');
-result = customers.pop();
-console.log(result);
+// // let result = customers.join('|');
+// // let result = customers.indexOf('Adam');
+// // let result = customers.concat('Tyrion', 'Aragon');
+// let result  = customers.push('Tyrion');
+// result = customers.pop();
+// console.log(result);
 
-console.log(customers);
-console.log(result);
+// console.log(customers);
+// console.log(result);
+
+let age;
+console.log(age);
+
+age = null;
+console.log(age, "null + 4 =", age + 4);
