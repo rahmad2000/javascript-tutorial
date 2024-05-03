@@ -26,6 +26,14 @@ Learn JavaScript with me by following this helpful YouTube playlist:
 12. [Logical Operators](#logical-operators)
 13. [Switch Statements](#switch-statements)
 14. [Variable and Block Scope](#variable-and-block-scope)
+15. [Basic Functions](#basic-functions)
+16. [Function with Parameters](#function-with-parameters)
+17. [Function with Return Value](#function-with-return-value)
+18. [Arrow Functions](#arrow-functions)
+19. [Functions and Methods](#functions-and-methods)
+20. [Callbacks and forEach](#callbacks-and-for-each)
+21. [Reference to UI](#reference-to-ui)
+
 
 ### Syntax Basics
 
@@ -198,5 +206,98 @@ if (true) {
 }
 console.log('outside code block:', age, name, test); // Note: `name` is not accessible here due to block scoping
 ```
+
+#### Basic Functions
+```javascript
+function greet(){
+      console.log('Hello There');
+  }
+const speak = function () {
+    console.log('Good Day!');
+};
+greet();
+speak();
+```
+
+#### Function with Parameters
+```javascript
+const greet = function(name ='John', time = 'Morning'){
+    console.log(`Hello, Good ${time} ${name}`);
+}
+greet('Adam');
+```
+
+#### Function with Return Value
+```javascript
+const calArea = function(radius){
+    return 3.14 * radius**2;
+};
+let area = calArea(3);
+console.log(area);
+```
+
+#### Arrow Functions
+```javascript
+const calArea = (radius) => 3.14 * radius**2;
+let area = calArea(3);
+console.log(area);
+
+// Practice Arrow Functions
+
+const greet = function(){
+    return 'Hello World';
+}
+// const greet = () => 'Hello World';
+console.log(greet());
+
+const bill = function(products, tax) {
+  let total = 0;
+  for (let i = 0; i < products.length; i++) {
+    total += products[i] + products[i] * tax;
+  }
+  return total;
+};
+console.log(bill([10, 15, 30], 0.2));
+```
+
+#### Functions and Methods
+```javascript
+const name = 'Adam';
+const greet = (name)=> `Hello ${name}`
+let resultOne = greet(name);
+console.log(resultOne);
+
+let resultTwo = name.toUpperCase();
+console.log(resultTwo);
+```
+
+#### Callbacks and forEach
+```javascript
+let people = ['John','Adam','Tyrion','Jeffery','Snow','Targarian']
+
+const logPerson = (people, index) => {
+    console.log(`${index} - Hello ${people}`);
+};
+
+people.forEach(logPerson);
+```
+
+#### Reference to UI
+```javascript
+const ul = document.querySelector('.people');
+
+let people = ['John','Adam','Tyrion','Jeffery','Snow','Targarian'];
+
+let html = ``;
+
+people.forEach(person =>{
+    html += `<li style="color: purple">${person}</li>`;
+});
+
+console.log(html);
+ul.innerHTML = html;
+```
+
+
 
 Feel free to follow along, review the code, and explore the concepts discussed. Happy coding!
