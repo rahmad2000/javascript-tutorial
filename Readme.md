@@ -33,7 +33,7 @@ Learn JavaScript with me by following this helpful YouTube playlist:
 19. [Functions and Methods](#functions-and-methods)
 20. [Callbacks and forEach](#callbacks-and-for-each)
 21. [Reference to UI](#reference-to-ui)
-22. [Object Literals,  Array of Objects, this.object and Methods in Object](#object-literals)
+22. [Object Literals](#object-literals)
 23. [Math Object](#math-object)
 24. [Primitive vs Reference Values](#primitive-vs-reference-values)
 
@@ -312,7 +312,7 @@ ul.innerHTML = html;
 
 ### Objects
 
-#### Object Literals,  Array of Objects, this.object and Methods in Object
+#### Object Literals
 ```javascript
 /*const titles = [
     {titleName: 'Hand of the Queen', influence: '30 Million'},
