@@ -33,6 +33,9 @@ Learn JavaScript with me by following this helpful YouTube playlist:
 19. [Functions and Methods](#functions-and-methods)
 20. [Callbacks and forEach](#callbacks-and-for-each)
 21. [Reference to UI](#reference-to-ui)
+22. [Object Literals](#object-literals)
+23. [Math Object](#math-object)
+24. [Primitive vs Reference Values](#primitive-vs-reference-values)
 
 
 ### Syntax Basics
@@ -307,6 +310,70 @@ console.log(html);
 ul.innerHTML = html;
 ```
 
+### Objects
 
+#### Object Literals,  Array of Objects, this.object and Methods in Object
+```javascript
+/*const titles = [
+    {titleName: 'Hand of the Queen', influence: '30 Million'},
+    {titleName: 'Master of Coin', influence: '10 Million'},
+    {titleName: 'Hand of the King', influence: '50 Million'}
+];
+console.log(titles);*/
+
+let user = {
+    name: 'Tyrion',
+    age: 31,
+    house: 'Lannister',
+    location: 'Kings Landing',
+    // array of objects
+    title: [
+        {titleName: 'Hand of the Queen', influence: '30 Million'},
+        {titleName: 'Master of Coin', influence: '10 Million'},
+        {titleName: 'Hand of the King', influence: '50 Million'}
+    ],
+    //Methods
+    status(){
+       return `${this.name} is Alive`;
+    },
+    // this.
+    currentTitle(){
+        console.log(`${this.name} holds following Titles:`)
+        this.title.forEach(title => {
+            console.log(title.titleName, title.influence);
+        })
+    }
+}
+```
+
+#### Math Object
+```javascript
+console.log(Math.PI);
+const area = 7.7;
+console.log(Math.round(area));
+console.log(Math.ceil(area));
+console.log(Math.floor(area));
+console.log(Math.trunc(area));
+const random = Math.random();
+console.log(random);
+console.log(Math.round(random * 100));
+```
+
+#### Primitive vs Reference Values
+```javascript
+//Primitive Values
+let scoreOne = 50;
+let scoreTwo = scoreOne;
+console.log(`scoreOne: ${scoreOne}`, `scoreTwo: ${scoreTwo}`);
+scoreOne = 100;
+console.log(`scoreOne: ${scoreOne}`, `scoreTwo: ${scoreTwo}`);
+
+// Reference Values
+userOne = { name: 'Tyrion', age: 31 };
+userTwo = userOne;
+console.log(userOne, userTwo);
+userOne.name = 'Arya';
+console.log(userOne, userTwo);
+```
 
 Feel free to follow along, review the code, and explore the concepts discussed. Happy coding!
