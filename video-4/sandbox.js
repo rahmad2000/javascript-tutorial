@@ -65,15 +65,28 @@
 
 
 
-const name = 'Adam';
+// const name = 'Adam';
 
 
-//function
-const greet = (name)=> `Hello ${name}`
-let resultOne = greet(name);
-console.log(resultOne);
+// //function
+// const greet = (name)=> `Hello ${name}`
+// let resultOne = greet(name);
+// console.log(resultOne);
 
-// methods
+// // methods
+// let resultTwo = name.toUpperCase();
+// console.log(resultTwo);
 
-let resultTwo = name.toUpperCase();
-console.log(resultTwo);
+
+
+
+
+// callbacks & foreach
+
+let people = ['John','Adam','Tyrion','Jeffery','Snow','Targarian']
+
+const logPerson = (people, index) => {
+    console.log(`${index} - Hello ${people}`);
+};
+
+people.forEach(logPerson);
