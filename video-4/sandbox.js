@@ -34,31 +34,46 @@
 
 
 
-// 4. Function with arrow
-const calArea = (radius) => 3.14 * radius**2;
-let area = calArea(3);
-console.log(area);
+// // 4. Function with arrow
+// const calArea = (radius) => 3.14 * radius**2;
+// let area = calArea(3);
+// console.log(area);
 
 
-// practice arrow functions
-const greet = function(){
-    return 'Hello World';
-}
-// const greet = () => 'Hello World';
-console.log(greet());
+// // practice arrow functions
+// const greet = function(){
+//     return 'Hello World';
+// }
+// // const greet = () => 'Hello World';
+// console.log(greet());
 
-const bill = function(products, tax) {
-  let total = 0;
-  for (let i = 0; i < products.length; i++) {
-    total += products[i] + products[i] * tax;
-  }
-  return total;
-};
-// const bill = (products, tax) =>{
-//     let total = 0;
-//     for (let i = 0; i < products.length; i++) {
-//         total += products[i] + products[i] * tax;
-//     }
-//     return total;
+// const bill = function(products, tax) {
+//   let total = 0;
+//   for (let i = 0; i < products.length; i++) {
+//     total += products[i] + products[i] * tax;
+//   }
+//   return total;
+// console.log(bill([10, 15, 30], 0.2));
 // };
+// // const bill = (products, tax) =>{
+// //     let total = 0;
+// //     for (let i = 0; i < products.length; i++) {
+// //         total += products[i] + products[i] * tax;
+// //     }
+// //     return total;
+// // };
 
+
+
+const name = 'Adam';
+
+
+//function
+const greet = (name)=> `Hello ${name}`
+let resultOne = greet(name);
+console.log(resultOne);
+
+// methods
+
+let resultTwo = name.toUpperCase();
+console.log(resultTwo);
