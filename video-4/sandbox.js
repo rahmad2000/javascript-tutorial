@@ -83,10 +83,26 @@
 
 // callbacks & foreach
 
-let people = ['John','Adam','Tyrion','Jeffery','Snow','Targarian']
+// let people = ['John','Adam','Tyrion','Jeffery','Snow','Targarian']
 
-const logPerson = (people, index) => {
-    console.log(`${index} - Hello ${people}`);
-};
+// const logPerson = (people, index) => {
+//     console.log(`${index} - Hello ${people}`);
+// };
 
-people.forEach(logPerson);
+// people.forEach(logPerson);
+
+
+//Reference to UI
+const ul = document.querySelector('.people');
+
+let people = ['John','Adam','Tyrion','Jeffery','Snow','Targarian'];
+
+let html = ``;
+
+people.forEach(person =>{
+    //create html template
+    html += `<li style="color: purple">${person}</li>`;
+});
+
+console.log(html);
+ul.innerHTML = html;
