@@ -207,6 +207,8 @@ if (true) {
 console.log('outside code block:', age, name, test); // Note: `name` is not accessible here due to block scoping
 ```
 
+### Functions
+
 #### Basic Functions
 ```javascript
 function greet(){
