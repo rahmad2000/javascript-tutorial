@@ -51,14 +51,36 @@
 
 // Math Object
 
-console.log(Math.PI);
+// console.log(Math.PI);
 
-const area = 7.7
+// const area = 7.7
 
-console.log(Math.round(area));
-console.log(Math.ceil(area));
-console.log(Math.floor(area));
-console.log(Math.trunc(area));
-const random = Math.random();
-console.log(random);
-console.log(Math.round(random * 100));
+// console.log(Math.round(area));
+// console.log(Math.ceil(area));
+// console.log(Math.floor(area));
+// console.log(Math.trunc(area));
+// const random = Math.random();
+// console.log(random);
+// console.log(Math.round(random * 100));
+
+// primitive values
+
+let scoreOne = 50;
+let scoreTwo = scoreOne;
+
+console.log(`scoreOne: ${scoreOne}`, `scoreTwo: ${scoreTwo}`);
+
+scoreOne = 100;
+console.log(`scoreOne: ${scoreOne}`, `scoreTwo: ${scoreTwo}`);
+
+// reference values
+
+userOne = { name: 'Tyrion', age: 31 };
+userTwo = userOne;
+
+console.log(userOne, userTwo);
+
+userOne.name = 'Arya';
+console.log(userOne, userTwo);
+
+// Primitive values
