@@ -121,3 +121,9 @@ paras.forEach(p =>{
 
 console.log(paras);
 
+
+
+//Toggling class
+const title = document.querySelector('.title');
+title.classList.toggle('test');
+title.classList.toggle('test');
