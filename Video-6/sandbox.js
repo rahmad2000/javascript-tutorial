@@ -26,12 +26,26 @@
 // const para = document.querySelector('p');
 // console.log(para);
 
-const para = document.querySelector('p');
-para.innerText = 'Dragons in Westros';
-
-const paras = document.querySelectorAll('p');
-paras.forEach(para =>{
-    para.innerText += ' Winter is Coming';
-});
 
 
+
+// const para = document.querySelector('p');
+// para.innerText = 'Dragons in Westros';
+
+// const paras = document.querySelectorAll('p');
+// paras.forEach(para =>{
+//     para.innerText += ' Winter is Coming';
+// });
+
+
+const content = document.querySelector('.content');
+console.log(content);
+
+content.innerHTML += '<h2>GAME OF THRONES</h2>';
+
+
+const people = ['Jon','Tyrion','Adam'];
+
+people.forEach(person =>{
+    content.innerHTML += `<p>${person}</p>`;
+})
