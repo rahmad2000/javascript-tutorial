@@ -11,17 +11,27 @@
 
 
 
-const title =  document.getElementById('page-title');
-console.log(title);
+// const title =  document.getElementById('page-title');
+// console.log(title);
 
-const errors = document.getElementsByClassName('error');
+// const errors = document.getElementsByClassName('error');
 
-console.log(errors);
+// console.log(errors);
 
-console.log(errors[0]);
+// console.log(errors[0]);
 
-const paras = document.getElementsByTagName('p');
-console.log(paras);
+// const paras = document.getElementsByTagName('p');
+// console.log(paras);
+
+// const para = document.querySelector('p');
+// console.log(para);
 
 const para = document.querySelector('p');
-console.log(para);
+para.innerText = 'Dragons in Westros';
+
+const paras = document.querySelectorAll('p');
+paras.forEach(para =>{
+    para.innerText += ' Winter is Coming';
+});
+
+
