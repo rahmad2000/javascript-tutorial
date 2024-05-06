@@ -38,14 +38,28 @@
 // });
 
 
-const content = document.querySelector('.content');
-console.log(content);
+// const content = document.querySelector('.content');
+// console.log(content);
 
-content.innerHTML += '<h2>GAME OF THRONES</h2>';
+// content.innerHTML += '<h2>GAME OF THRONES</h2>';
 
 
-const people = ['Jon','Tyrion','Adam'];
+// const people = ['Jon','Tyrion','Adam'];
 
-people.forEach(person =>{
-    content.innerHTML += `<p>${person}</p>`;
-})
+// people.forEach(person =>{
+//     content.innerHTML += `<p>${person}</p>`;
+// })
+
+
+const link = document.querySelector('a');
+
+console.log(link.getAttribute('href'));
+link.setAttribute('href','https://www.theonion.com');
+link.innerText = 'The Onion';
+
+const msg = document.querySelector('p');
+
+console.log(msg.getAttribute('class'));
+msg.setAttribute('class','success');
+msg.setAttribute('style','color:green');
+
