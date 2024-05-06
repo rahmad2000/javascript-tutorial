@@ -36,6 +36,14 @@ Learn JavaScript with me by following this helpful YouTube playlist:
 22. [Object Literals](#object-literals)
 23. [Math Object](#math-object)
 24. [Primitive vs Reference Values](#primitive-vs-reference-values)
+25. [Query Selector](#query-selector)
+26. [Getting Elements](#getting-elements)
+27. [Changing Text Inside Element](#changing-text-inside-element)
+28. [Changing HTML Inside Element](#changing-html-inside-element)
+29. [Getting and Setting Attributes of Element](#getting-and-setting-attributes-of-element)
+30. [Adding and Removing Classes](#adding-and-removing-classes)
+31. [Challenge: Class Manipulation Based on Content](#challenge-class-manipulation-based-on-content)
+32. [Toggling Classes](#toggling-classes)
 
 
 ### Syntax Basics
@@ -376,4 +384,99 @@ userOne.name = 'Arya';
 console.log(userOne, userTwo);
 ```
 
+
+### Document Object Model
+
+#### Query Selector
+```javascript
+const para = document.querySelector('div.error');
+console.log(para);
+
+const paras = document.querySelectorAll('p');
+const errors = document.querySelectorAll('.error');
+console.log(errors);
+console.log(para[2]);
+```
+
+#### Getting Elements
+```javascript
+const title = document.getElementById('page-title');
+console.log(title);
+
+const errors = document.getElementsByClassName('error');
+console.log(errors);
+console.log(errors[0]);
+
+const paras = document.getElementsByTagName('p');
+console.log(paras);
+
+const para = document.querySelector('p');
+console.log(para);
+```
+
+#### Changing Text Inside Element
+```javascript
+const para = document.querySelector('p');
+para.innerText = 'Dragons in Westros';
+
+const paras = document.querySelectorAll('p');
+paras.forEach(para => {
+    para.innerText += ' Winter is Coming';
+});
+```
+
+#### Changing HTML Inside Element
+```javascript
+const content = document.querySelector('.content');
+console.log(content);
+content.innerHTML += '<h2>GAME OF THRONES</h2>';
+
+const people = ['Jon', 'Tyrion', 'Adam'];
+people.forEach(person => {
+    content.innerHTML += `<p>${person}</p>`;
+});
+```
+
+#### Getting and Setting Attributes of Element
+```javascript
+const link = document.querySelector('a');
+console.log(link.getAttribute('href'));
+link.setAttribute('href', 'https://www.theonion.com');
+link.innerText = 'The Onion';
+
+const msg = document.querySelector('p');
+console.log(msg.getAttribute('class'));
+msg.setAttribute('class', 'success');
+msg.setAttribute('style', 'color:green');
+```
+
+#### Adding and Removing Classes
+```javascript
+const content = document.querySelector('p');
+console.log(content.classList);
+content.classList.add('error');
+content.classList.remove('error');
+content.classList.add('success');
+```
+
+#### Challenge: Class Manipulation Based on Content
+```javascript
+const paras = document.querySelectorAll('p');
+paras.forEach(p => {
+    if (p.textContent.includes('error')) {
+        p.classList.add('error');
+    }
+    if (p.innerText.includes('success')) {
+        p.classList.add('success');
+    }
+});
+console.log(paras);
+```
+
+#### Toggling Classes
+```javascript
+const title = document.querySelector('.title');
+title.classList.toggle('test');
+title.classList.toggle('test');
+```
 Feel free to follow along, review the code, and explore the concepts discussed. Happy coding!
