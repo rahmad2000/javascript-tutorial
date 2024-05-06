@@ -1,4 +1,6 @@
-//  const para = document.querySelector('div.error');
+//  Query Selector
+
+//const para = document.querySelector('div.error');
 
 //  console.log(para);
 
@@ -10,7 +12,7 @@
 //  console.log(para[2]);
 
 
-
+//  Getting elements
 // const title =  document.getElementById('page-title');
 // console.log(title);
 
@@ -28,7 +30,7 @@
 
 
 
-
+// Changing text inside element
 // const para = document.querySelector('p');
 // para.innerText = 'Dragons in Westros';
 
@@ -38,6 +40,8 @@
 // });
 
 
+
+//Changing HTML inside element
 // const content = document.querySelector('.content');
 // console.log(content);
 
@@ -55,6 +59,7 @@
 
 
 
+// Getting and setting attribute of element
 
 // const link = document.querySelector('a');
 
@@ -67,7 +72,6 @@
 // console.log(msg.getAttribute('class'));
 // msg.setAttribute('class','success');
 // msg.setAttribute('style','color:green');
-
 
 
 
@@ -89,13 +93,31 @@
 
 
 
+// Adding and removing class
+// const content = document.querySelector('p');
 
-const content = document.querySelector('p');
+// console.log(content.classList);
+// content.classList.add('error');
+// content.classList.remove('error');
 
-console.log(content.classList);
-content.classList.add('error');
-content.classList.remove('error');
+// content.classList.add('success');
 
-content.classList.add('success');
 
+
+
+
+//  Challenge
+const paras = document.querySelectorAll('p');
+
+
+paras.forEach(p =>{
+    if(p.textContent.includes('error')){
+        p.classList.add('error');
+    }
+    if(p.innerText.includes('success')){
+        p.classList.add('success');
+    }
+})
+
+console.log(paras);
 
